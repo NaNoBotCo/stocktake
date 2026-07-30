@@ -30,11 +30,17 @@ ACCOUNTS = {
 
 # Why a repo has no GitHub remote. Anything absent from here and lacking a
 # remote gets flagged rather than assumed to be deliberate.
+#
+# Kept generic here on purpose: this script is pushed to a public repo, and
+# naming what each private project actually contains would publish the exact
+# fact it stays private to avoid publishing. The specifics live in local
+# memory, not in tracked code — same rule as the projects themselves: what
+# stays local, stays local.
 LOCAL_ONLY = {
-    "tel": "seizure telemetry — medical data, never push",
-    "khwan": "ขวัญ interview vault — personal record, never push",
-    "michael-go-court": "litigation material — never push",
-    "rusty-chandelier": "paid client work",
+    "tel": "private — sensitive data",
+    "khwan": "private — personal record",
+    "michael-go-court": "private — legal matter",
+    "rusty-chandelier": "paid client work, not open source",
     "stocktake": "this script",
 }
 
